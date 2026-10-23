@@ -1,0 +1,482 @@
+{
+  "navbar": {
+    "search": "ابحث عن أي شيء...",
+    "admin": "المستخدم المسؤول",
+    "administrator": "مدير النظام",
+    "logout": "تسجيل الخروج",
+    "notifications": "الإشعارات"
+  },
+  "sidebar": {
+    "mainMenu": "القائمة الرئيسية",
+    "dashboard": "لوحة التحكم",
+    "sales": "المبيعات",
+    "purchases": "المشتريات",
+    "inventory": "المخزون",
+    "customers": "العملاء",
+    "suppliers": "الموردين",
+    "employees": "الموظفين",
+    "accounting": "الحسابات",
+    "reports": "التقارير",
+    "settings": "الإعدادات",
+    "overview": "نظرة عامة",
+    "operations": "العمليات",
+    "directory": "الدليل",
+    "financial": "المالية",
+    "system": "النظام",
+    "collapse": "طي القائمة الجانبية",
+    "expand": "توسيع القائمة الجانبية",
+    "workspace": "مساحة العمل",
+    "online": "النظام متصل"
+  },
+  "common": {
+    "requestFailed": "فشل الطلب.",
+    "retry": "إعادة المحاولة",
+    "loading": "جارٍ التحميل...",
+    "dismiss": "إخفاء",
+    "close": "إغلاق",
+    "changeLanguage": "تغيير اللغة",
+    "delete": "حذف",
+    "cancel": "إلغاء",
+    "currency": "ج.م",
+    "edit": "تعديل",
+    "save": "حفظ",
+    "confirmDelete": "هل أنت متأكد من حذف هذا العنصر؟"
+  },
+  "auth": {
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "confirmPasswordPlaceholder": "أكّد كلمة المرور",
+    "fullName": "الاسم الكامل",
+    "fullNamePlaceholder": "أدخل اسمك",
+    "signUpTitle": "إنشاء حساب",
+    "signUpSubtitle": "أنشئ حسابك للبدء",
+    "createPasswordPlaceholder": "أنشئ كلمة مرور (8 أحرف أو أكثر)",
+    "passwordTooShort": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل.",
+    "signingUp": "جارٍ إنشاء الحساب...",
+    "alreadyHaveAccount": "لديك حساب بالفعل؟",
+    "or": "أو",
+    "systemName": "نظام ERP",
+    "systemDescription": "نظام إدارة الأعمال",
+    "welcome": "مرحباً بعودتك",
+    "signInTitle": "تسجيل الدخول إلى حسابك",
+    "signInSubtitle": "أدخل بياناتك للوصول إلى مساحة العمل.",
+    "emailAddress": "البريد الإلكتروني",
+    "emailPlaceholder": "name@company.com",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "rememberEmail": "تذكر بريدي الإلكتروني على هذا الجهاز",
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+    "signIn": "تسجيل الدخول",
+    "signingIn": "جارٍ تسجيل الدخول...",
+    "newToSystem": "مستخدم جديد في نظام ERP؟",
+    "createAccount": "إنشاء حساب",
+    "recovery": "استعادة كلمة المرور",
+    "forgotTitle": "هل نسيت كلمة المرور؟",
+    "forgotSubtitle": "أدخل بريد حسابك لاستلام رمز التحقق.",
+    "continue": "متابعة",
+    "sendingCode": "جارٍ إرسال الرمز...",
+    "backToLogin": "العودة لتسجيل الدخول",
+    "verifyReset": "تحقق وإعادة تعيين",
+    "newPasswordTitle": "أنشئ كلمة مرور جديدة",
+    "codeSent": "أرسلنا رمزًا من ستة أرقام إلى",
+    "verificationCode": "رمز التحقق",
+    "codePlaceholder": "000000",
+    "newPassword": "كلمة المرور الجديدة",
+    "newPasswordPlaceholder": "8 أحرف على الأقل",
+    "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+    "repeatNewPassword": "أعد كتابة كلمة المرور الجديدة",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "updating": "جارٍ التحديث...",
+    "passwordUpdated": "تم تحديث كلمة المرور",
+    "redirecting": "جارٍ تحويلك لتسجيل الدخول...",
+    "showPassword": "إظهار كلمة المرور",
+    "hidePassword": "إخفاء كلمة المرور",
+    "passwordsNoMatch": "كلمتا المرور غير متطابقتين.",
+    "useEight": "استخدم 8 أحرف أو أكثر",
+    "addUppercase": "أضف حرفًا كبيرًا",
+    "addNumber": "أضف رقمًا",
+    "strongPassword": "كلمة مرور قوية",
+    "localCode": "رمز التطوير المحلي:",
+    "accountSecurity": "أمان الحساب",
+    "businessConfidence": "أدر عملك بثقة.",
+    "workspaceDescription": "المبيعات والمخزون والعملاء والمالية في مساحة عمل آمنة واحدة.",
+    "secureAccess": "وصول آمن",
+    "realTimeInsights": "رؤى لحظية",
+    "builtForTeam": "مصمم لفريقك",
+    "secureRecovery": "عد إلى عملك بأمان.",
+    "recoveryDescription": "سنساعدك في استعادة الوصول إلى مساحة عمل ERP بخطوات بسيطة.",
+    "oneTimeVerification": "تحقق لمرة واحدة",
+    "passwordProtection": "حماية كلمة المرور"
+  },
+  "dashboard": {
+    "orderLabel": "طلب",
+    "title": "لوحة التحكم",
+    "subtitle": "مرحباً بك! إليك ملخص أداء النظام اليوم.",
+    "stats": {
+      "totalSales": "إجمالي المبيعات",
+      "customers": "العملاء",
+      "products": "المنتجات",
+      "orders": "الطلبات"
+    },
+    "salesOverview": "نظرة عامة على المبيعات",
+    "salesSubtitle": "أداء المبيعات الشهري",
+    "recentOrders": "أحدث الطلبات",
+    "recentOrdersSubtitle": "آخر طلبات العملاء المضافة",
+    "lowStockProducts": "منتجات قاربت على النفاد",
+    "lowStockSubtitle": "الأصناف التي تحتاج لإعادة طلب",
+    "table": {
+      "product": "المنتج",
+      "category": "التصنيف",
+      "stock": "المخزون",
+      "status": "الحالة"
+    }
+  },
+  "sales": {
+    "title": "المبيعات",
+    "subtitle": "إدارة فواتير المبيعات ومعاملات العملاء",
+    "addSale": "إضافة فاتورة بيع",
+    "totalSales": "إجمالي المبيعات",
+    "totalInvoices": "إجمالي الفواتير",
+    "completed": "مكتملة",
+    "search": "البحث برقم الفاتورة أو العميل...",
+    "noResults": "لا توجد فواتير مبيعات",
+    "filters": {
+      "all": "كل الحالات",
+      "completed": "مكتملة",
+      "pending": "قيد الانتظار",
+      "cancelled": "ملغاة"
+    },
+    "status": {
+      "completed": "مكتملة",
+      "pending": "قيد الانتظار",
+      "cancelled": "ملغاة"
+    },
+    "table": {
+      "invoice": "رقم الفاتورة",
+      "customer": "العميل",
+      "date": "التاريخ",
+      "amount": "المبلغ",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "modal": {
+      "title": "إضافة فاتورة بيع جديدة",
+      "customer": "اسم العميل",
+      "amount": "المبلغ الإجمالي (ج.م)",
+      "date": "تاريخ الفاتورة",
+      "status": "الحالة",
+      "submit": "إنشاء الفاتورة"
+    }
+  },
+  "inventory": {
+    "title": "المخزون",
+    "subtitle": "إدارة المنتجات وأرصدة المستودعات",
+    "addProduct": "إضافة منتج",
+    "totalProducts": "إجمالي المنتجات",
+    "totalStock": "إجمالي القطع",
+    "lowStock": "مخزون منخفض",
+    "outOfStock": "نفد من المخزون",
+    "search": "البحث باسم المنتج أو كود SKU...",
+    "noResults": "لا توجد منتجات مطابقة",
+    "filters": {
+      "all": "كل الحالات"
+    },
+    "status": {
+      "inStock": "متوفر",
+      "lowStock": "مخزون منخفض",
+      "outOfStock": "نفد من المخزون"
+    },
+    "table": {
+      "product": "المنتج",
+      "sku": "كود الصنف SKU",
+      "category": "التصنيف",
+      "price": "السعر",
+      "stock": "الكمية المتاحة",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "modal": {
+      "title": "إضافة منتج جديد",
+      "name": "اسم المنتج",
+      "sku": "كود الصنف SKU",
+      "category": "التصنيف",
+      "price": "سعر البيع (ج.م)",
+      "stock": "الرصيد المبدئي",
+      "submit": "حفظ المنتج"
+    }
+  },
+  "customers": {
+    "title": "العملاء",
+    "subtitle": "إدارة بيانات العملاء والشركات والتواصل",
+    "addCustomer": "إضافة عميل",
+    "totalCustomers": "إجمالي العملاء",
+    "activeCustomers": "العملاء النشطين",
+    "totalOrders": "إجمالي الطلبات",
+    "search": "البحث باسم العميل، الشركة، أو الهاتف...",
+    "noResults": "لا يوجد عملاء مطابقين",
+    "filters": {
+      "all": "كل الحالات"
+    },
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "table": {
+      "customer": "العميل",
+      "company": "الشركة",
+      "contact": "التواصل",
+      "orders": "الطلبات",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "modal": {
+      "title": "إضافة عميل جديد",
+      "name": "الاسم الكامل",
+      "company": "اسم الشركة / المنشأة",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "status": "الحالة",
+      "submit": "حفظ العميل"
+    }
+  },
+  "purchases": {
+    "title": "المشتريات",
+    "subtitle": "إدارة أوامر الشراء ومعاملات الموردين",
+    "addPurchase": "إضافة عملية شراء",
+    "totalPurchases": "إجمالي المشتريات",
+    "completed": "مكتملة",
+    "pending": "قيد الانتظار",
+    "totalOrders": "إجمالي الطلبات",
+    "search": "البحث في المشتريات...",
+    "noResults": "لا توجد مشتريات مطابقة",
+    "filters": {
+      "all": "كل الحالات"
+    },
+    "status": {
+      "completed": "مكتملة",
+      "pending": "قيد الانتظار",
+      "cancelled": "ملغاة"
+    },
+    "table": {
+      "id": "رقم الشراء",
+      "supplier": "المورد",
+      "product": "المنتج",
+      "quantity": "الكمية",
+      "amount": "المبلغ",
+      "date": "التاريخ",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "modal": {
+      "title": "إضافة أمر شراء جديد",
+      "supplier": "اسم المورد",
+      "product": "اسم المنتج",
+      "quantity": "الكمية",
+      "amount": "المبلغ الإجمالي (ج.م)",
+      "date": "تاريخ الطلب",
+      "status": "حالة الطلب",
+      "submit": "إنشاء أمر الشراء"
+    }
+  },
+  "suppliers": {
+    "title": "الموردين",
+    "subtitle": "إدارة بيانات الموردين والشركات والمستحقات المالية",
+    "addSupplier": "إضافة مورد",
+    "totalSuppliers": "إجمالي الموردين",
+    "activeSuppliers": "الموردين النشطين",
+    "totalBalance": "المستحقات المعلقة",
+    "totalOrders": "الطلبات المسلمة",
+    "search": "البحث باسم المورد، الشركة، أو الهاتف...",
+    "noResults": "لا يوجد موردين مطابقين",
+    "filters": {
+      "all": "كل الحالات",
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "table": {
+      "id": "الكود",
+      "supplier": "اسم المورد",
+      "contact": "مسؤول الاتصال",
+      "category": "التصنيف",
+      "phone": "رقم الهاتف",
+      "balance": "المستحقات",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "modal": {
+      "title": "إضافة مورد جديد",
+      "name": "اسم المورد / الشركة",
+      "contact": "اسم مسؤول الاتصال",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "category": "التصنيف التجاري",
+      "balance": "الرصيد الافتتاحي المستحق (ج.م)",
+      "status": "الحالة",
+      "submit": "حفظ المورد"
+    }
+  },
+  "employees": {
+    "title": "الموظفين",
+    "subtitle": "إدارة فريق العمل، الأقسام، ومسيرات الرواتب",
+    "addEmployee": "إضافة موظف",
+    "totalEmployees": "إجمالي الموظفين",
+    "activeEmployees": "الموظفين على رأس العمل",
+    "departments": "عدد الأقسام",
+    "totalPayroll": "إجمالي الرواتب الشهرية",
+    "search": "البحث بالاسم، المسمى الوظيفي، أو البريد...",
+    "noResults": "لا يوجد موظفين مطابقين",
+    "filters": {
+      "all": "كل الأقسام",
+      "statusAll": "كل الحالات"
+    },
+    "status": {
+      "active": "على رأس العمل",
+      "onLeave": "في إجازة",
+      "inactive": "غير نشط"
+    },
+    "table": {
+      "id": "الرقم الوظيفي",
+      "employee": "الموظف",
+      "role": "المسمى الوظيفي",
+      "department": "القسم",
+      "contact": "التواصل",
+      "salary": "الراتب الشهري",
+      "joinDate": "تاريخ التعيين",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "modal": {
+      "title": "إضافة موظف جديد",
+      "name": "الاسم الكامل",
+      "role": "المسمى الوظيفي",
+      "department": "القسم",
+      "email": "البريد الإلكتروني للعمل",
+      "phone": "رقم الهاتف",
+      "salary": "الراتب الشهري (ج.م)",
+      "joinDate": "تاريخ التعيين",
+      "status": "الحالة",
+      "submit": "إضافة الموظف"
+    }
+  },
+  "accounting": {
+    "title": "الحسابات والمالية",
+    "subtitle": "متابعة التدفق النقدي، الإيرادات، والمصروفات التشغيلية",
+    "addTransaction": "إضافة قيد مالي",
+    "totalRevenue": "إجمالي الإيرادات",
+    "totalExpenses": "إجمالي المصروفات",
+    "netProfit": "صافي الأرباح",
+    "pendingInvoices": "تسويات قيد الانتظار",
+    "revenueVsExpenses": "مقارنة الإيرادات بالمصروفات",
+    "search": "البحث بالبيان، المرجع، أو التصنيف...",
+    "noResults": "لا توجد معاملات مطابقة",
+    "filters": {
+      "all": "كل القيود",
+      "income": "إيرادات",
+      "expense": "مصروفات"
+    },
+    "types": {
+      "income": "إيراد",
+      "expense": "مصروف"
+    },
+    "status": {
+      "paid": "مكتمل",
+      "pending": "معلق"
+    },
+    "table": {
+      "id": "رقم المعاملة",
+      "description": "البيان / الوصف",
+      "category": "البند المحاسبي",
+      "type": "النوع",
+      "amount": "المبلغ",
+      "date": "التاريخ",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "modal": {
+      "title": "إضافة معاملة مالية جديدة",
+      "description": "وصف المعاملة",
+      "category": "التصنيف المحاسبي",
+      "type": "نوع المعاملة",
+      "amount": "المبلغ (ج.م)",
+      "date": "تاريخ القيد",
+      "status": "حالة الدفع",
+      "submit": "تسجيل القيد"
+    }
+  },
+  "reports": {
+    "title": "التقارير والإحصائيات",
+    "subtitle": "تحليلات الأداء المالي والتشغيلي وإصدار التقارير",
+    "exportPdf": "تصدير PDF",
+    "exportCsv": "تصدير Excel / CSV",
+    "print": "طباعة التقرير",
+    "revenueTrends": "المسار المالي الشهري (المبيعات مقابل المشتريات)",
+    "expenseBreakdown": "توزيع المصروفات التشغيلية",
+    "monthlySummary": "الملخص المالي السنوي",
+    "table": {
+      "month": "الشهر",
+      "sales": "إجمالي المبيعات",
+      "purchases": "المشتريات",
+      "expenses": "المصروفات",
+      "netProfit": "صافي الربح",
+      "growth": "نسبة النمو"
+    },
+    "kpis": {
+      "operatingMargin": "هامش الربح التشغيلي",
+      "avgOrder": "متوسط قيمة الطلب",
+      "fulfillmentRate": "نسبة إنجاز الطلبات",
+      "cashFlow": "التدفق النقدي الإيجابي"
+    },
+    "downloadSuccess": "تم تنزيل تقرير {{type}} للسنة المالية {{year}} بنجاح."
+  },
+  "settings": {
+    "title": "إعدادات النظام",
+    "subtitle": "تخصيص بيانات المنشأة، تفضيلات العرض، والأمان",
+    "saveChanges": "حفظ الإعدادات",
+    "savedSuccess": "تم حفظ الإعدادات بنجاح!",
+    "tabs": {
+      "general": "ملف الشركة",
+      "localization": "اللغة والمنطقة",
+      "security": "الأمان والحساب",
+      "notifications": "الإشعارات"
+    },
+    "general": {
+      "companyName": "اسم الشركة / المؤسسة",
+      "companyEmail": "البريد الرسمي",
+      "phone": "هاتف التواصل",
+      "currency": "العملة الأساسية",
+      "taxNumber": "الرقم الضريبي",
+      "address": "العنوان والمقر الرئيسي"
+    },
+    "localization": {
+      "language": "لغة النظام",
+      "timezone": "المنطقة الزمنية",
+      "dateFormat": "تنسيق التاريخ",
+      "arabic": "العربية (Arabic)",
+      "english": "English"
+    },
+    "security": {
+      "currentPassword": "كلمة المرور الحالية",
+      "newPassword": "كلمة المرور الجديدة",
+      "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+      "updatePassword": "تحديث كلمة المرور",
+      "passwordRequired": "جميع حقول كلمة المرور مطلوبة.",
+      "passwordTooShort": "يجب أن تكون كلمة المرور 8 أحرف على الأقل.",
+      "passwordsNoMatch": "كلمتا المرور غير متطابقتين.",
+      "passwordMustDiffer": "يجب أن تختلف كلمة المرور الجديدة.",
+      "passwordUpdated": "تم تحديث كلمة المرور بنجاح.",
+      "twoFactor": "تفعيل التحقق بخطوتين (2FA)",
+      "twoFactorDesc": "طلب رمز تأكيد إضافي عند تسجيل الدخول للنظام"
+    },
+    "notifications": {
+      "emailAlerts": "إشعارات البريد الإلكتروني",
+      "emailAlertsDesc": "استلام تقرير يومي بملخص العمليات",
+      "stockAlerts": "تنبيهات نقص المخزون",
+      "stockAlertsDesc": "إشعار فوري عند وصول أي صنف للحد الأدنى",
+      "orderAlerts": "تنبيهات فواتير البيع والشراء",
+      "orderAlertsDesc": "إشعار عند إنشاء أي أمر شراء أو بيع جديد"
+    }
+  }
+}

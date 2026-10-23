@@ -1,0 +1,482 @@
+{
+  "navbar": {
+    "search": "Search anything...",
+    "admin": "Admin User",
+    "administrator": "Administrator",
+    "logout": "Logout",
+    "notifications": "Notifications"
+  },
+  "sidebar": {
+    "mainMenu": "MAIN MENU",
+    "dashboard": "Dashboard",
+    "sales": "Sales",
+    "purchases": "Purchases",
+    "inventory": "Inventory",
+    "customers": "Customers",
+    "suppliers": "Suppliers",
+    "employees": "Employees",
+    "accounting": "Accounting",
+    "reports": "Reports",
+    "settings": "Settings",
+    "overview": "OVERVIEW",
+    "operations": "OPERATIONS",
+    "directory": "DIRECTORY",
+    "financial": "FINANCIAL",
+    "system": "SYSTEM",
+    "collapse": "Collapse sidebar",
+    "expand": "Expand sidebar",
+    "workspace": "Workspace",
+    "online": "System online"
+  },
+  "common": {
+    "requestFailed": "Request failed.",
+    "retry": "Retry",
+    "loading": "Loading...",
+    "dismiss": "Dismiss",
+    "close": "Close",
+    "changeLanguage": "Change language",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "currency": "EGP",
+    "edit": "Edit",
+    "save": "Save",
+    "confirmDelete": "Are you sure you want to delete this item?"
+  },
+  "auth": {
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your name",
+    "signUpTitle": "Create Account",
+    "signUpSubtitle": "Create your account to get started",
+    "createPasswordPlaceholder": "Create a password (8+ characters)",
+    "passwordTooShort": "Password must be at least 8 characters.",
+    "signingUp": "Creating account...",
+    "alreadyHaveAccount": "Already have an account?",
+    "or": "OR",
+    "systemName": "ERP System",
+    "systemDescription": "Business Management System",
+    "welcome": "WELCOME BACK",
+    "signInTitle": "Sign in to your account",
+    "signInSubtitle": "Enter your details to access your workspace.",
+    "emailAddress": "Email address",
+    "emailPlaceholder": "name@company.com",
+    "passwordPlaceholder": "Enter your password",
+    "rememberEmail": "Remember my email on this device",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign in",
+    "signingIn": "Signing in...",
+    "newToSystem": "New to ERP System?",
+    "createAccount": "Create an account",
+    "recovery": "PASSWORD RECOVERY",
+    "forgotTitle": "Forgot your password?",
+    "forgotSubtitle": "Enter your account email to receive a verification code.",
+    "continue": "Continue",
+    "sendingCode": "Sending code...",
+    "backToLogin": "Back to sign in",
+    "verifyReset": "VERIFY & RESET",
+    "newPasswordTitle": "Create a new password",
+    "codeSent": "We sent a six-digit code for",
+    "verificationCode": "Verification code",
+    "codePlaceholder": "000000",
+    "newPassword": "New password",
+    "newPasswordPlaceholder": "At least 8 characters",
+    "confirmNewPassword": "Confirm new password",
+    "repeatNewPassword": "Repeat your new password",
+    "resetPassword": "Reset password",
+    "updating": "Updating...",
+    "passwordUpdated": "Password updated",
+    "redirecting": "Redirecting you to sign in...",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "passwordsNoMatch": "Passwords do not match.",
+    "useEight": "Use 8+ characters",
+    "addUppercase": "Add an uppercase letter",
+    "addNumber": "Add a number",
+    "strongPassword": "Strong password",
+    "localCode": "Local development code:",
+    "accountSecurity": "ACCOUNT SECURITY",
+    "businessConfidence": "Manage your business with confidence.",
+    "workspaceDescription": "Sales, inventory, customers and finance—together in one secure workspace.",
+    "secureAccess": "Secure access",
+    "realTimeInsights": "Real-time insights",
+    "builtForTeam": "Built for your team",
+    "secureRecovery": "Back to business, securely.",
+    "recoveryDescription": "We’ll help you restore access to your ERP workspace in a few simple steps.",
+    "oneTimeVerification": "One-time verification",
+    "passwordProtection": "Password protection"
+  },
+  "dashboard": {
+    "orderLabel": "Order",
+    "title": "Dashboard",
+    "subtitle": "Welcome back! Here's what's happening today.",
+    "stats": {
+      "totalSales": "Total Sales",
+      "customers": "Customers",
+      "products": "Products",
+      "orders": "Orders"
+    },
+    "salesOverview": "Sales Overview",
+    "salesSubtitle": "Monthly sales performance",
+    "recentOrders": "Recent Orders",
+    "recentOrdersSubtitle": "Latest customer orders",
+    "lowStockProducts": "Low Stock Products",
+    "lowStockSubtitle": "Products that need restocking",
+    "table": {
+      "product": "Product",
+      "category": "Category",
+      "stock": "Stock",
+      "status": "Status"
+    }
+  },
+  "sales": {
+    "title": "Sales",
+    "subtitle": "Manage your sales invoices and transactions",
+    "addSale": "Add Sale",
+    "totalSales": "Total Sales",
+    "totalInvoices": "Total Invoices",
+    "completed": "Completed",
+    "search": "Search invoice or customer...",
+    "noResults": "No sales found",
+    "filters": {
+      "all": "All Statuses",
+      "completed": "Completed",
+      "pending": "Pending",
+      "cancelled": "Cancelled"
+    },
+    "status": {
+      "completed": "Completed",
+      "pending": "Pending",
+      "cancelled": "Cancelled"
+    },
+    "table": {
+      "invoice": "Invoice",
+      "customer": "Customer",
+      "date": "Date",
+      "amount": "Amount",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "modal": {
+      "title": "Add New Sale Invoice",
+      "customer": "Customer Name",
+      "amount": "Amount (EGP)",
+      "date": "Invoice Date",
+      "status": "Status",
+      "submit": "Create Invoice"
+    }
+  },
+  "inventory": {
+    "title": "Inventory",
+    "subtitle": "Manage your products and warehouse stock",
+    "addProduct": "Add Product",
+    "totalProducts": "Total Products",
+    "totalStock": "Total Stock",
+    "lowStock": "Low Stock",
+    "outOfStock": "Out of Stock",
+    "search": "Search products by name, SKU...",
+    "noResults": "No products found",
+    "filters": {
+      "all": "All Statuses"
+    },
+    "status": {
+      "inStock": "In Stock",
+      "lowStock": "Low Stock",
+      "outOfStock": "Out of Stock"
+    },
+    "table": {
+      "product": "Product",
+      "sku": "SKU",
+      "category": "Category",
+      "price": "Price",
+      "stock": "Stock",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "modal": {
+      "title": "Add New Product",
+      "name": "Product Name",
+      "sku": "SKU Code",
+      "category": "Category",
+      "price": "Unit Price (EGP)",
+      "stock": "Quantity in Stock",
+      "submit": "Save Product"
+    }
+  },
+  "customers": {
+    "title": "Customers",
+    "subtitle": "Manage your customers and their information",
+    "addCustomer": "Add Customer",
+    "totalCustomers": "Total Customers",
+    "activeCustomers": "Active Customers",
+    "totalOrders": "Total Orders",
+    "search": "Search customer by name, email, phone...",
+    "noResults": "No customers found",
+    "filters": {
+      "all": "All Statuses"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "table": {
+      "customer": "Customer",
+      "company": "Company",
+      "contact": "Contact",
+      "orders": "Orders",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "modal": {
+      "title": "Add New Customer",
+      "name": "Full Name",
+      "company": "Company / Organization",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "status": "Status",
+      "submit": "Save Customer"
+    }
+  },
+  "purchases": {
+    "title": "Purchases",
+    "subtitle": "Manage purchase orders and supplier transactions",
+    "addPurchase": "Add Purchase",
+    "totalPurchases": "Total Purchases",
+    "completed": "Completed",
+    "pending": "Pending",
+    "totalOrders": "Total Orders",
+    "search": "Search purchases...",
+    "noResults": "No purchases found",
+    "filters": {
+      "all": "All Statuses"
+    },
+    "status": {
+      "completed": "Completed",
+      "pending": "Pending",
+      "cancelled": "Cancelled"
+    },
+    "table": {
+      "id": "Purchase ID",
+      "supplier": "Supplier",
+      "product": "Product",
+      "quantity": "Quantity",
+      "amount": "Amount",
+      "date": "Date",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "modal": {
+      "title": "Add New Purchase Order",
+      "supplier": "Supplier Name",
+      "product": "Product Name",
+      "quantity": "Quantity",
+      "amount": "Total Amount (EGP)",
+      "date": "Order Date",
+      "status": "Status",
+      "submit": "Create Order"
+    }
+  },
+  "suppliers": {
+    "title": "Suppliers",
+    "subtitle": "Manage vendor profiles, contracts, and payables",
+    "addSupplier": "Add Supplier",
+    "totalSuppliers": "Total Suppliers",
+    "activeSuppliers": "Active Suppliers",
+    "totalBalance": "Outstanding Balance",
+    "totalOrders": "Delivered Orders",
+    "search": "Search by name, company, or contact...",
+    "noResults": "No suppliers found",
+    "filters": {
+      "all": "All Statuses",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "table": {
+      "id": "ID",
+      "supplier": "Supplier Name",
+      "contact": "Contact Person",
+      "category": "Category",
+      "phone": "Phone",
+      "balance": "Balance Due",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "modal": {
+      "title": "Add New Supplier",
+      "name": "Supplier / Company Name",
+      "contact": "Contact Person",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "category": "Category",
+      "balance": "Initial Balance Due (EGP)",
+      "status": "Status",
+      "submit": "Save Supplier"
+    }
+  },
+  "employees": {
+    "title": "Employees",
+    "subtitle": "Manage staff members, roles, and payroll information",
+    "addEmployee": "Add Employee",
+    "totalEmployees": "Total Staff",
+    "activeEmployees": "Active Staff",
+    "departments": "Departments",
+    "totalPayroll": "Monthly Payroll",
+    "search": "Search employees by name, role, or email...",
+    "noResults": "No employees found",
+    "filters": {
+      "all": "All Departments",
+      "statusAll": "All Statuses"
+    },
+    "status": {
+      "active": "Active",
+      "onLeave": "On Leave",
+      "inactive": "Inactive"
+    },
+    "table": {
+      "id": "Employee ID",
+      "employee": "Employee",
+      "role": "Role",
+      "department": "Department",
+      "contact": "Contact",
+      "salary": "Salary",
+      "joinDate": "Join Date",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "modal": {
+      "title": "Add New Employee",
+      "name": "Full Name",
+      "role": "Job Title",
+      "department": "Department",
+      "email": "Work Email",
+      "phone": "Phone Number",
+      "salary": "Monthly Salary (EGP)",
+      "joinDate": "Hiring Date",
+      "status": "Status",
+      "submit": "Add Employee"
+    }
+  },
+  "accounting": {
+    "title": "Accounting & Finance",
+    "subtitle": "Track revenue, operational expenses, and cash flow",
+    "addTransaction": "Add Transaction",
+    "totalRevenue": "Total Revenue",
+    "totalExpenses": "Total Expenses",
+    "netProfit": "Net Profit",
+    "pendingInvoices": "Pending Settlements",
+    "revenueVsExpenses": "Revenue vs Expenses Overview",
+    "search": "Search by description, reference, or category...",
+    "noResults": "No transactions found",
+    "filters": {
+      "all": "All Types",
+      "income": "Income",
+      "expense": "Expense"
+    },
+    "types": {
+      "income": "Income",
+      "expense": "Expense"
+    },
+    "status": {
+      "paid": "Completed",
+      "pending": "Pending"
+    },
+    "table": {
+      "id": "Tx ID",
+      "description": "Description",
+      "category": "Category",
+      "type": "Type",
+      "amount": "Amount",
+      "date": "Date",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "modal": {
+      "title": "Add New Transaction",
+      "description": "Transaction Description",
+      "category": "Category",
+      "type": "Transaction Type",
+      "amount": "Amount (EGP)",
+      "date": "Transaction Date",
+      "status": "Status",
+      "submit": "Record Transaction"
+    }
+  },
+  "reports": {
+    "title": "Analytics & Reports",
+    "subtitle": "Business intelligence, fiscal summaries, and exportable reports",
+    "exportPdf": "Export PDF",
+    "exportCsv": "Export CSV",
+    "print": "Print Report",
+    "revenueTrends": "Monthly Financial Trend (Sales vs Purchases)",
+    "expenseBreakdown": "Operating Expenses Breakdown",
+    "monthlySummary": "Fiscal Performance Summary",
+    "table": {
+      "month": "Month",
+      "sales": "Gross Sales",
+      "purchases": "Purchases",
+      "expenses": "Expenses",
+      "netProfit": "Net Profit",
+      "growth": "MoM Growth"
+    },
+    "kpis": {
+      "operatingMargin": "Operating Margin",
+      "avgOrder": "Avg Order Value",
+      "fulfillmentRate": "Order Fulfillment",
+      "cashFlow": "Positive Cash Flow"
+    },
+    "downloadSuccess": "{{type}} report for FY {{year}} downloaded."
+  },
+  "settings": {
+    "title": "System Settings",
+    "subtitle": "Configure company details, preferences, and system security",
+    "saveChanges": "Save Settings",
+    "savedSuccess": "Settings saved successfully!",
+    "tabs": {
+      "general": "Company Profile",
+      "localization": "Regional & Language",
+      "security": "Security & Access",
+      "notifications": "Notifications"
+    },
+    "general": {
+      "companyName": "Company Name",
+      "companyEmail": "Official Email",
+      "phone": "Contact Phone",
+      "currency": "Default Currency",
+      "taxNumber": "Tax Registration Number",
+      "address": "Headquarters Address"
+    },
+    "localization": {
+      "language": "System Language",
+      "timezone": "Timezone",
+      "dateFormat": "Date Format",
+      "arabic": "العربية (Arabic)",
+      "english": "English"
+    },
+    "security": {
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmNewPassword": "Confirm New Password",
+      "updatePassword": "Update Password",
+      "passwordRequired": "All password fields are required.",
+      "passwordTooShort": "Password must be at least 8 characters.",
+      "passwordsNoMatch": "Passwords do not match.",
+      "passwordMustDiffer": "New password must be different.",
+      "passwordUpdated": "Password updated successfully.",
+      "twoFactor": "Enable Two-Factor Authentication (2FA)",
+      "twoFactorDesc": "Require OTP verification for administrative logins"
+    },
+    "notifications": {
+      "emailAlerts": "Email Notifications",
+      "emailAlertsDesc": "Receive daily summary reports via email",
+      "stockAlerts": "Low Stock Alerts",
+      "stockAlertsDesc": "Notify when inventory items fall below safety threshold",
+      "orderAlerts": "New Purchase & Sales Alerts",
+      "orderAlertsDesc": "Notify immediately on new order creation"
+    }
+  }
+}
