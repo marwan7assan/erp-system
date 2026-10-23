@@ -15,7 +15,7 @@ import StatCard from "../../components/common/StatCard";
 import StatusBadge from "../../components/common/StatusBadge";
 import Modal from "../../components/common/Modal";
 import useCrud from "../../hooks/useCrud";
-import { initialPurchases } from "../../data/mockdata";
+import { initialPurchases } from "../../data/mockdata.js";
 import { purchasesApi } from "../../services/api";
 import CrudStatus from "../../components/common/CrudStatus";
 import FormError from "../../components/common/FormError";
