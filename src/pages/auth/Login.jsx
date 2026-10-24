@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaArrowRight, FaEnvelope, FaEye, FaEyeSlash, FaLock, FaSignInAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../../context/AuthContext";
 
 function Login() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { login } = useAuth();
   const { t } = useTranslation();
   const [error, setError] = useState("");
+  const [infoMessage, setInfoMessage] = useState(location.state?.message || "");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
@@ -19,21 +21,44 @@ function Login() {
     if (savedEmail) { setFormData((current) => ({ ...current, email: savedEmail })); setRememberMe(true); }
   }, []);
 
-  const handleChange = (event) => { setFormData((current) => ({ ...current, [event.target.name]: event.target.value })); setError(""); };
+  const handleChange = (event) => {
+    setFormData((current) => ({ ...current, [event.target.name]: event.target.value }));
+    setError("");
+  };
+
   const handleSubmit = async (event) => {
-    event.preventDefault(); setError(""); setIsSubmitting(true);
+    event.preventDefault();
+    setError("");
+    setInfoMessage("");
+    setIsSubmitting(true);
     try {
       await login(formData.email, formData.password);
       if (rememberMe) localStorage.setItem("erp_remembered_email", formData.email.trim());
       else localStorage.removeItem("erp_remembered_email");
       navigate("/");
-    } catch (err) { setError(err.message || "Unable to sign in. Please try again."); } finally { setIsSubmitting(false); }
+    } catch (err) {
+      const message = err.message || "";
+
+      if (message.includes("Email not confirmed")) {
+        setError(t("auth.confirmEmailPrompt", { defaultValue: "Please confirm your email address before signing in." }));
+      } else if (
+        message.includes("Invalid login credentials") ||
+        message.includes("invalid_credentials")
+      ) {
+        setError(t("auth.invalidCredentials", { defaultValue: "Incorrect email or password." }));
+      } else {
+        setError(message || t("auth.signInFailed", { defaultValue: "Unable to sign in. Please try again." }));
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return <div className="auth-page"><div className="auth-shell">
     <aside className="auth-showcase"><div className="auth-showcase-logo">E</div><p className="auth-kicker">ERP SYSTEM</p><h1>{t("auth.businessConfidence")}</h1><p>{t("auth.workspaceDescription")}</p><div className="auth-showcase-points"><span>✓ {t("auth.secureAccess")}</span><span>✓ {t("auth.realTimeInsights")}</span><span>✓ {t("auth.builtForTeam")}</span></div></aside>
     <main className="auth-container"><div className="auth-mobile-brand"><div className="auth-logo">E</div><span>ERP System</span></div><div className="auth-card">
       <div className="auth-card-heading"><p className="auth-kicker">{t("auth.welcome")}</p><h2>{t("auth.signInTitle")}</h2><p className="auth-subtitle">{t("auth.signInSubtitle")}</p></div>
+      {infoMessage && <div className="auth-success" role="status">{infoMessage}</div>}
       {error && <div className="auth-error" role="alert">{error}</div>}
       <form onSubmit={handleSubmit}>
         <div className="form-group"><label htmlFor="login-email">{t("auth.emailAddress")}</label><div className="input-wrapper"><FaEnvelope /><input id="login-email" type="email" name="email" autoComplete="email" placeholder={t("auth.emailPlaceholder")} value={formData.email} onChange={handleChange} required /></div></div>

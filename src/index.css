@@ -265,7 +265,7 @@ button {
 
 @media (max-width: 768px) {
   .sidebar {
-    width: 70px;
+    width: 76px;
   }
 
   .logo {
@@ -281,9 +281,18 @@ button {
     display: none;
   }
 
-  .main-content {
-    width: calc(100% - 70px);
-    margin-left: 70px;
+  .main-content,
+  .app-sidebar-collapsed .main-content {
+    width: calc(100% - 76px);
+    margin-left: 76px;
+    margin-right: 0;
+  }
+
+  html[dir="rtl"] .main-content,
+  html[dir="rtl"] .app-sidebar-collapsed .main-content {
+    width: calc(100% - 76px);
+    margin-right: 76px;
+    margin-left: 0;
   }
 
   .navbar {
@@ -773,8 +782,8 @@ html[dir="rtl"] .app-sidebar-collapsed .main-content { margin-right: 76px; margi
 
 @media (max-width: 900px) {
   .sidebar {
-    width: 70px;
-    padding: 15px 8px;
+    width: 76px;
+    padding: 14px 10px;
   }
 
   .sidebar-logo {
@@ -793,8 +802,18 @@ html[dir="rtl"] .app-sidebar-collapsed .main-content { margin-right: 76px; margi
     justify-content: center;
   }
 
-  .main-content {
-    margin-left: 70px;
+  .main-content,
+  .app-sidebar-collapsed .main-content {
+    width: calc(100% - 76px);
+    margin-left: 76px;
+    margin-right: 0;
+  }
+
+  html[dir="rtl"] .main-content,
+  html[dir="rtl"] .app-sidebar-collapsed .main-content {
+    width: calc(100% - 76px);
+    margin-right: 76px;
+    margin-left: 0;
   }
 
   .navbar-search {
@@ -1063,6 +1082,15 @@ html[dir="rtl"] .app-sidebar-collapsed .main-content { margin-right: 76px; margi
   color: var(--info);
 }
 
+.auth-success {
+  background: var(--success-soft);
+  color: var(--success);
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
 /* Polished sign-in and password recovery experience */
 .auth-page {
   padding: 24px;
@@ -1133,7 +1161,7 @@ html[dir="rtl"] .app-sidebar-collapsed .main-content { margin-right: 76px; margi
 .button-arrow { position: absolute; right: 18px; }
 .button-spinner { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,.45); border-top-color: #fff; border-radius: 50%; animation: auth-spin .65s linear infinite; }
 .auth-footer { margin: 27px 0 0; }
-.auth-error, .auth-code { padding: 12px; border-radius: 9px; font-size: 13px; line-height: 1.45; }
+.auth-error, .auth-code, .auth-success { padding: 12px; border-radius: 9px; font-size: 13px; line-height: 1.45; }
 .back-link { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 26px; color: var(--text-muted); font-size: 13px; text-decoration: none; }
 .back-link:hover { color: var(--primary); }
 .reset-steps { display: flex; align-items: center; margin: 0 0 28px; }
@@ -1853,10 +1881,12 @@ html[dir="rtl"] .sidebar-logo {
 }
 
 /* Keep the navbar aligned with the expanded/collapsed sidebar widths. */
-.main-content { width: calc(100% - 266px); margin-left: 266px; }
-.app-sidebar-collapsed .main-content { width: calc(100% - 76px); margin-left: 76px; }
-html[dir="rtl"] .main-content { width: calc(100% - 266px); margin-left: 0; margin-right: 266px; }
-html[dir="rtl"] .app-sidebar-collapsed .main-content { width: calc(100% - 76px); margin-left: 0; margin-right: 76px; }
+@media (min-width: 901px) {
+  .main-content { width: calc(100% - 266px); margin-left: 266px; margin-right: 0; }
+  .app-sidebar-collapsed .main-content { width: calc(100% - 76px); margin-left: 76px; margin-right: 0; }
+  html[dir="rtl"] .main-content { width: calc(100% - 266px); margin-left: 0; margin-right: 266px; }
+  html[dir="rtl"] .app-sidebar-collapsed .main-content { width: calc(100% - 76px); margin-left: 0; margin-right: 76px; }
+}
 .navbar-search { position: relative; flex: 0 1 320px; min-width: 0; z-index: 2; }
 .global-search-results { position: absolute; top: calc(100% + 8px); left: 0; right: 0; padding: 6px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); box-shadow: 0 10px 24px var(--shadow-color); }
 .global-search-results button { display: block; width: 100%; padding: 9px 10px; border-radius: 6px; color: var(--text); background: transparent; text-align: start; }
@@ -2051,7 +2081,13 @@ body,
 
   html[dir="rtl"] .main-content,
   html[dir="rtl"] .app-sidebar-collapsed .main-content {
+    position: absolute;
     inset: 0 60px 0 0;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    overflow-y: auto;
   }
 
   /* Older RTL desktop rules add a label-sized icon margin.  On the compact

@@ -47,11 +47,56 @@ function Signup() {
     }
 
     setIsSubmitting(true);
+    setError("");
+
     try {
-      await signup(formData.name, formData.email, formData.password);
-      navigate("/");
-    } catch (err) { setError(err.message); }
-    finally { setIsSubmitting(false); }
+      const result = await signup(
+        formData.name,
+        formData.email,
+        formData.password
+      );
+
+      if (result.session) {
+        navigate("/");
+      } else {
+        navigate("/login", {
+          state: {
+            message: t("auth.checkEmailConfirmation", {
+              defaultValue:
+                "Account created successfully. Please check your email to confirm your account before signing in.",
+            }),
+          },
+        });
+      }
+    } catch (err) {
+      const message = err.message || "";
+      if (
+        message.includes("already registered") ||
+        message.includes("already in use") ||
+        message.includes("User already registered")
+      ) {
+        setError(
+          t("auth.emailAlreadyRegistered", {
+            defaultValue: "This email is already registered.",
+          })
+        );
+      } else if (message.includes("Password should be")) {
+        setError(
+          t("auth.passwordTooShort", {
+            defaultValue: "Password must be at least 8 characters.",
+          })
+        );
+      } else {
+        setError(
+          message ||
+            t("auth.signupFailed", {
+              defaultValue: "Unable to create account. Please try again.",
+            })
+        );
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -73,7 +118,7 @@ function Signup() {
           </p>
 
           {error && (
-            <div className="auth-error">
+            <div className="auth-error" role="alert">
               {error}
             </div>
           )}
