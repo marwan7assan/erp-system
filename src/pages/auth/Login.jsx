@@ -56,7 +56,7 @@ function Login() {
 
   return <div className="auth-page"><div className="auth-shell">
     <aside className="auth-showcase"><div className="auth-showcase-logo">E</div><p className="auth-kicker">ERP SYSTEM</p><h1>{t("auth.businessConfidence")}</h1><p>{t("auth.workspaceDescription")}</p><div className="auth-showcase-points"><span>✓ {t("auth.secureAccess")}</span><span>✓ {t("auth.realTimeInsights")}</span><span>✓ {t("auth.builtForTeam")}</span></div></aside>
-    <main className="auth-container"><div className="auth-mobile-brand"><div className="auth-logo">E</div><span>ERP System</span></div><div className="auth-card">
+    <main className="auth-container"><div className="auth-mobile-brand auth-brand"><div className="auth-logo">E</div><h1>{t("auth.systemName")}</h1><p>{t("auth.systemDescription")}</p></div><div className="auth-card">
       <div className="auth-card-heading"><p className="auth-kicker">{t("auth.welcome")}</p><h2>{t("auth.signInTitle")}</h2><p className="auth-subtitle">{t("auth.signInSubtitle")}</p></div>
       {infoMessage && <div className="auth-success" role="status">{infoMessage}</div>}
       {error && <div className="auth-error" role="alert">{error}</div>}

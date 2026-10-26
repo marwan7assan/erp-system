@@ -1199,7 +1199,7 @@ html[dir="rtl"] .app-sidebar-collapsed .main-content { margin-right: 76px; margi
   .auth-showcase { display: none; }
   .auth-shell .auth-container { min-height: 100vh; padding: 34px 24px; align-items: flex-start; }
   .auth-language-toggle { top: 28px; right: 24px; }
-  .auth-mobile-brand { display: flex; align-items: center; justify-content: center; gap: 11px; margin-bottom: 52px; color: var(--sidebar-bg); font-size: 19px; font-weight: 800; }
+  .auth-mobile-brand { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; margin-bottom: 52px; }
   .auth-logo { width: 38px; height: 38px; border-radius: 11px; color: #fff; background: var(--primary); font-size: 19px; box-shadow: none; }
 }
 
