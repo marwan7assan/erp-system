@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaArrowLeft, FaCheck, FaEnvelope, FaEye, FaEyeSlash, FaKey, FaLock } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { authApi } from "../../services/api";
-import AuthLanguageToggle from "../../components/auth/AuthLanguageToggle";
 
 function ForgotPassword() {
   const navigate = useNavigate();
@@ -36,7 +35,7 @@ function ForgotPassword() {
 
   return <div className="auth-page"><div className="auth-shell auth-shell-compact">
     <aside className="auth-showcase"><div className="auth-showcase-logo">E</div><p className="auth-kicker">{t("auth.accountSecurity")}</p><h1>{t("auth.secureRecovery")}</h1><p>{t("auth.recoveryDescription")}</p><div className="auth-showcase-points"><span>✓ {t("auth.oneTimeVerification")}</span><span>✓ {t("auth.passwordProtection")}</span></div></aside>
-    <main className="auth-container"><AuthLanguageToggle /><div className="auth-mobile-brand auth-brand"><div className="auth-logo">E</div><h1>{t("auth.systemName")}</h1><p>{t("auth.systemDescription")}</p></div><div className="auth-card">
+    <main className="auth-container"><div className="auth-mobile-brand auth-brand"><div className="auth-logo">E</div><h1>{t("auth.systemName")}</h1><p>{t("auth.systemDescription")}</p></div><div className="auth-card">
       <Link to="/login" className="back-link"><FaArrowLeft /> {t("auth.backToLogin")}</Link>
       <div className="reset-steps"><span className={step >= 1 ? "active" : ""}>1</span><i className={step >= 2 ? "active" : ""} /><span className={step >= 2 ? "active" : ""}>2</span><i className={step >= 3 ? "active" : ""} /><span className={step >= 3 ? "active" : ""}>3</span></div>
       {step === 1 && <><div className="auth-card-heading"><p className="auth-kicker">{t("auth.recovery")}</p><h2>{t("auth.forgotTitle")}</h2><p className="auth-subtitle">{t("auth.forgotSubtitle")}</p></div>{error && <div className="auth-error" role="alert">{error}</div>}<form onSubmit={requestCode}><div className="form-group"><label htmlFor="reset-email">{t("auth.emailAddress")}</label><div className="input-wrapper"><FaEnvelope /><input id="reset-email" type="email" autoComplete="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder={t("auth.emailPlaceholder")} required /></div></div><button className="auth-button" disabled={isSubmitting}>{isSubmitting ? <><span className="button-spinner" />{t("auth.sendingCode")}</> : t("auth.continue")}</button></form></>}
